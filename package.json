@@ -1,0 +1,39 @@
+{
+  "name": "datdot-wallet",
+  "version": "0.0.0",
+  "description": "crytpo wallet for datdot",
+  "main": "src/datdot-wallet.js",
+  "bin": {
+    "datdot": "cli/index.js"
+  },
+  "scripts": {
+    "start": "node cli --dev",
+    "web": "budo web/wallet.js:bundle.js --open --live --ssl",
+    "build": "browserify --full-paths web/wallet.js > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dat",
+    "datdot",
+    "substrate",
+    "blockchain",
+    "wallet"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serapath/datpinchain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/serapath/datpinchain/issues"
+  },
+  "homepage": "https://github.com/serapath/datpinchain#readme",
+  "devDependencies": {
+    "budo": "^11.6.3"
+  },
+  "dependencies": {
+    "bel": "^6.0.0",
+    "csjs-inject": "^1.0.1",
+    "electron": "^9.0.3"
+  }
+}
